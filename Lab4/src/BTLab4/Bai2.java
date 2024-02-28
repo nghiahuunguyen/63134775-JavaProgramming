@@ -1,7 +1,6 @@
 package BTLab4;
 import java.util.Scanner;
-
-public class Bai1 {
+public class Bai2 {
 	private String tenSp;
     private double donGia;
     private double giamGia;
@@ -24,9 +23,18 @@ public class Bai1 {
         giamGia = scanner.nextDouble();
     }
     public static void main(String[] args) {
-        Bai1 sp = new Bai1();
-        sp.nhap();
-        sp.xuat();
+    	Bai2 sp1 = new Bai2();
+        System.out.println("Nhập thông tin cho sản phẩm 1:");
+        sp1.nhap();
+        System.out.println();
+        Bai2 sp2 = new Bai2();
+        System.out.println("Nhập thông tin cho sản phẩm 2:");
+        sp2.nhap();
+        System.out.println();
+        System.out.println("Thông tin của sản phẩm 1:");
+        sp1.xuat();
+        System.out.println();
+        System.out.println("Thông tin của sản phẩm 2:");
+        sp2.xuat();
     }
-	
 }
